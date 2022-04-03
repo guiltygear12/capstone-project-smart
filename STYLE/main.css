@@ -1,0 +1,44 @@
+body{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+/* 메인 메뉴 */
+header{
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 20px;
+}
+.gnb{
+    width: 500px;
+    height: inherit;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-right{
+    width: 500px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 250px;
+    height: 20px;
+    background-color: white;
+    color: #333;
+    margin-right: 10px;
+}
+.icon{
+    margin: 10px;
+}

@@ -1,0 +1,6 @@
+
+a{text-decoration: none; color: #eee;}
+h1,h2,h3,h4,h5,h6{margin: 0;font-weight: normal;}
+button{cursor: pointer; outline: none;}
+input,textarea,select{outline: none;}
+button,input,textarea,select{font-family: 'Noto Sans KR', sans-serif;}
