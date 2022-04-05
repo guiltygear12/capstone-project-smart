@@ -2,7 +2,7 @@
 .container{
     width: 1280px;
     margin: 0 auto;
-    border: 1px solid #666;
+    /* border: 1px solid #666; */
 }
 
 /* 헤더영역 */
@@ -16,11 +16,36 @@ nav{
     align-items: center;
 
 }
+.gnb_wrap h1{
+    font-size: 26px;
+}
 .gnb_menu{
     width: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.gnb_menu li {
+    padding: 5px;
+    position: relative;
+    font-size: 16px;
+}
+.gnb_menu li::before {
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 0px;
+    height: 3px;
+    bottom: 0;
+    transition: .5s;
+}
+.gnb_menu li:hover::before{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 60px;
+    height: 3px;
+    bottom: 0;
 }
 .gnb_right{
     width: 500px;
@@ -50,7 +75,7 @@ nav{
 .slide_banner{
     width: 99vw;
     height: calc(100vh - 70px);
-    /* overflow: hidden; */
+    overflow: hidden;
     margin: 0 auto;
     position: relative;
 }
@@ -75,14 +100,14 @@ nav{
     z-index: 2;
     width: 20vw;
     height: inherit;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 
 }
 .slide_prev{
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+
 }
 .slide_next{
     right: 0;
-    background-color: rgba(0,0,0,0.5);
+ 
 }
