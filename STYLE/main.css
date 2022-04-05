@@ -1,44 +1,88 @@
-body{
+/* 공통적으로 사용되는 css 영역 */
+.container{
     width: 1280px;
     margin: 0 auto;
-    background-color: antiquewhite;
-    border: 1px solid black;
+    border: 1px solid #666;
 }
 
-/* 메인 메뉴 */
-header{
-    width: 100%;
-    background-color: #333;
-    color: #eee;
-    display: flex;
+/* 헤더영역 */
+nav{
     height: 60px;
+}
+.gnb_wrap{
+    height: inherit;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
-.logo{
-    margin: 20px;
-}
-.gnb{
+.gnb_menu{
     width: 500px;
-    height: inherit;
-    margin-left: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.header-right{
+.gnb_right{
     width: 500px;
-    height: inherit;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
 }
-.search{
-    width: 250px;
-    height: 20px;
-    background-color: white;
-    color: #333;
-    margin-right: 10px;
+/* 아이콘 gnb 우측 영역은 아이콘을 정하고 나서 추가후 제작 예정 */
+.gnb_right>div:nth-child(1){
+    border-bottom: 1px solid #555;
+    width: 50px;
+    text-align: right;
+    transition: .5s all;
+}
+.gnb_right>div:nth-child(1):hover{
+    border-bottom: 1px solid #555;
+    width: 300px;
 }
 .icon{
-    margin: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #666;
+    text-align: center;
+    margin: 0 15px;
+}
+
+/* 메인 영역 */
+.slide_banner{
+    width: 99vw;
+    height: calc(100vh - 70px);
+    /* overflow: hidden; */
+    margin: 0 auto;
+    position: relative;
+}
+.slide_content{
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+.slide_content div{
+    height: calc(100vh - 62px);
+    width: 100vw;
+}
+.slide_content div img{
+    height: inherit;
+    width: inherit;
+}
+.slide_item{
+    transition: .5s all;
+}
+.slide_banner .slide_btn{
+    position: absolute;
+    z-index: 2;
+    width: 20vw;
+    height: inherit;
+    border: 3px solid black;
+
+}
+.slide_prev{
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.slide_next{
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
 }
