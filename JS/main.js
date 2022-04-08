@@ -106,3 +106,23 @@ $('.slide_prev').click(function(){
             alert(slideNum)
       }
 })
+
+// 이벤트 영역
+$('.discount_side div').click(function(){
+    $(this).addClass('active')
+    $(this).siblings().removeClass('active')
+    if($(".discount_side div:nth-child(1).active").length) {
+        $('.discount_main img:nth-child(1)').addClass('active')
+        $('.discount_main img:nth-child(1)').siblings().removeClass('active')
+       } else {
+        if($(".discount_side div:nth-child(2).active").length) {
+            $('.discount_main img:nth-child(2)').addClass('active')
+            $('.discount_main img:nth-child(2)').siblings().removeClass('active')
+           } else {
+            if($(".discount_side div:nth-child(3).active").length) {
+                $('.discount_main img:nth-child(3)').addClass('active')
+                $('.discount_main img:nth-child(3)').siblings().removeClass('active')
+               } 
+           }
+       }
+})

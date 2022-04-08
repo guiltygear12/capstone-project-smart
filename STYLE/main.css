@@ -94,6 +94,21 @@ nav{
 }
 .slide_item{
     transition: .5s all;
+    position: relative;
+}
+.slide_item div{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top: 50%;
+    left: 30%;
+    width: 500px;
+}
+.slide_item div h2{
+    font-size: 5em;
+}
+.slide_item div p{
+    font-size: 2em;
 }
 .slide_banner .slide_btn{
     position: absolute;
@@ -110,4 +125,70 @@ nav{
 .slide_next{
     right: 0;
  
+}
+/* 2번 메인컨텐츠 영역 - 할인,행사중인 컨텐츠 영역 */
+.discount{
+    width: 1280px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 80px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    /* background-color: #555; */
+    text-align: center;
+}
+.discount h2{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.discount div{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 30px;
+}
+.discount_main{
+    flex-grow: 7;
+    position: relative;
+    background-color: #eee;
+    border-radius: 2rem;
+}
+.discount_main img{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .3s;
+}
+.discount_main .active{
+    opacity: 1;
+}
+.discount_side{
+    padding: 100px 0;
+    box-sizing: border-box;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.discount_side div{
+    transition: .3s;
+    background-color: #eee;
+    border-radius: 1rem;
+    z-index: 10;
+}
+.discount_side div h3{
+    font-size: 30px;
+}
+.discount_side .active{
+    transform: translateX(-10%);
+    background-color: #ccc;
 }
