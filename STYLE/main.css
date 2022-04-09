@@ -158,6 +158,7 @@ nav{
     position: relative;
     background-color: #eee;
     border-radius: 2rem;
+    box-shadow: #ccc 10px 10px 10px;
 }
 .discount_main img{
     width: 500px;
@@ -184,6 +185,7 @@ nav{
     background-color: #eee;
     border-radius: 1rem;
     z-index: 10;
+    box-shadow: #ccc 10px 10px 10px;
 }
 .discount_side div h3{
     font-size: 30px;
@@ -191,4 +193,94 @@ nav{
 .discount_side .active{
     transform: translateX(-10%);
     background-color: #ccc;
+    box-shadow: #aaa 10px 10px 10px;
+}
+
+/* 추천영역 */
+.recommendation{
+    width: 1280px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.recommendation h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.recommendation>div{
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+/* 추천상품 메인이미지 영역 */
+.recommend_main{
+    flex-grow: 5;
+    background-color: #ccc;
+    border-radius: 1rem;
+    background-image: url('../IMG/wallpaper_1.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    transition: .5s all;
+}
+.recommend_main:hover{
+    background-size: 200%;
+}
+/* 추천상품 사이드 영역 */
+.recommend_side{
+    flex-grow: 1;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 100px 0;
+    max-width: 300px;
+}
+.recommend_side:nth-child(3){
+    align-items: flex-end;
+}
+.recommend_side h4{
+    font-size: 16px;
+    position: relative;
+    max-width: 200px;
+}
+.recommend_side h4:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ccc;
+    bottom: -10px;
+    transition: .5s all;
+}
+.recommend_side:nth-of-type(1) h4:after{
+    left: 0;
+}
+.recommend_side:nth-of-type(3) h4:after{
+    right: 0;
+}
+.recommend_side h4.active:after{
+    width: 250%;
+    background-color: #000;
+}
+.recommend_side h4:hover:after{
+    width: 250%;
+    background-color: #000;
+}
+
+/* 브랜드별 시리즈 소개 */
+.series_info{
+    width: 1280px;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+.brand_series_info{
+    width: 100%;
+    height: 700px;
 }

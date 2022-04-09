@@ -126,3 +126,34 @@ $('.discount_side div').click(function(){
            }
        }
 })
+
+// 추천 상품 영역
+$('.recommend_side h4').click(function(){
+    $('.recommend_side h4').removeClass('active')
+    $(this).addClass('active')
+    if($(".recommend_side h4.reco1.active").length) {
+        $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_1.jpg")'})
+    } else {
+        if($(".recommend_side h4.reco2.active").length) {
+            $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_2.jpg")'})
+        } else {
+            if($(".recommend_side h4.reco3.active").length) {
+                $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_3.jpg")'})
+            } else {
+                if($(".recommend_side h4.reco4.active").length) {
+                    $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_4.jpg")'})
+                } else {
+                    if($(".recommend_side h4.reco5.active").length) {
+                        $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_5.jpg")'})
+                    } else {
+                        if($(".recommend_side h4.reco6.active").length) {
+                            $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_6.jpg")'})
+                        } else {
+                    
+                        }
+                    }
+                }
+            }
+        }
+    }
+})
