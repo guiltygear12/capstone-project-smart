@@ -2,6 +2,23 @@ let slideNum=0;
 function slideCount(slideNum) {
     return slideNum + 1;
   }
+// gnb 메뉴
+$(document).ready(function() { 
+    $(".gnb_menu>li").mouseover(function() { 
+        $(this).children(".sub").stop().slideDown(); 
+    }); 
+    $(".gnb_menu>li").mouseleave(function() { 
+        $(this).children(".sub").stop().slideUp();
+     }); 
+    });
+
+$('.search').click(function(){
+    $(this).toggleClass('active')
+})
+$('.gnb_right a i').click(function(){
+    $('.user').toggleClass('active')
+})
+
 // 슬라이드 배너
 // 넥스트 버튼
 $('.slide_next').mouseenter(function(){
@@ -157,4 +174,51 @@ $('.recommend_side h4').click(function(){
             }
         }
     }
+})
+
+// 브랜드 대표 시리즈 소개
+$('.samsung .brand_products_img div h4').click(function(){
+    $(this).siblings().removeClass('active')
+    $(this).addClass('active')
+    if($(".samsung .brand_products_img div h4:nth-child(1).active").length) {
+        $('.samsung .brand_products_img').css({'background-image':'url("../IMG/sam1.jpg")'})
+       } else {
+        if($(".samsung .brand_products_img div h4:nth-child(2).active").length) {
+            $('.samsung .brand_products_img').css({'background-image':'url("../IMG/sam2.png")'})
+           } else {
+            if($(".samsung .brand_products_img div h4:nth-child(3).active").length) {
+                $('.samsung .brand_products_img').css({'background-image':'url("../IMG/sam3.jpg")'})
+               } 
+           }
+       }
+})
+$('.lg .brand_products_img div h4').click(function(){
+    $(this).siblings().removeClass('active')
+    $(this).addClass('active')
+    if($(".lg .brand_products_img div h4:nth-child(1).active").length) {
+        $('.lg .brand_products_img').css({'background-image':'url("../img/wallpaper_4.jpg")'})
+       } else {
+        if($(".lg .brand_products_img div h4:nth-child(2).active").length) {
+            $('.lg .brand_products_img').css({'background-image':'url("../IMG/wallpaper_1.jpg")'})
+           } else {
+            if($(".lg .brand_products_img div h4:nth-child(3).active").length) {
+                $('.lg .brand_products_img').css({'background-image':'url("../IMG/wallpaper_2.jpg")'})
+               } 
+           }
+       }
+})
+$('.apple .brand_products_img div h4').click(function(){
+    $(this).siblings().removeClass('active')
+    $(this).addClass('active')
+    if($(".apple .brand_products_img div h4:nth-child(1).active").length) {
+        $('.apple .brand_products_img').css({'background-image':'url("../IMG/apple1.jpg")'})
+       } else {
+        if($(".apple .brand_products_img div h4:nth-child(2).active").length) {
+            $('.apple .brand_products_img').css({'background-image':'url("../IMG/apple2.jpg")'})
+           } else {
+            if($(".apple .brand_products_img div h4:nth-child(3).active").length) {
+                $('.apple .brand_products_img').css({'background-image':'url("../IMG/wallpaper_3.jpg")'})
+               } 
+           }
+       }
 })

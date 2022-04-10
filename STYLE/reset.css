@@ -5,3 +5,4 @@ ul{list-style: none;}
 button{cursor: pointer; outline: none;}
 input,textarea,select{outline: none;}
 button,input,textarea,select{font-family: 'Noto Sans KR', sans-serif;}
+li{list-style: none;}

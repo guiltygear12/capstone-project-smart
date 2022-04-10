@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./STYLE/font.css">
     <link rel="stylesheet" href="./STYLE/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <!-- gnb 메뉴가 들어갈 영역입니다. -->
@@ -16,18 +17,46 @@
         <section class="container gnb_wrap">
             <h1><a>LOGOAREA</a></h1>
             <ul class="gnb_menu">
-                <li><a href="#none">Menu1</a></li>
-                <li><a href="#none">Menu2</a></li>
-                <li><a href="#none">Menu3</a></li>
-                <li><a href="#none">Menu4</a></li>
+                <li><a href="#none">Menu1</a>
+                    <ul class="sub">
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">Menu2</a>
+                    <ul class="sub">
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">Menu3</a>
+                    <ul class="sub">
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">Menu4</a>
+                    <ul class="sub">
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                        <li><a href="#none">Menu1</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="gnb_right">
-                <div>
-                   검색
+                <div class="search"></div>
+                <a href="#none">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+                <div class="user">
+                    <a href="#none"><p>회원가입</p></a>
+                    <a href="#none"><p>로그인</p></a> 
                 </div>
-                <div class="icon">장바구니</div>
-                <div class="icon">로그인</div>
-                <div class="icon">회원가입</div>
             </div>
         </section>
     </nav>
@@ -109,25 +138,55 @@
 
             <!-- 시리즈 소개 -->
             <div class="series_info">
-                <div class="brand_series_info">
+                <div class="brand_series_info samsung">
                     <h2>SAMSUNG</h2>
-                    <div>
-                        
+                    <div class="brand_products_img">
+                        <div>
+                            <h4 class="active">Galaxy Book</h4>
+                            <h4>Galaxy Ion</h4>
+                            <h4>Galaxy Odyssey</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="brand_series_info">
+                <div class="brand_series_info lg">
                     <h2>LG</h2>
+                    <div class="brand_products_img">
+                        <div>
+                            <h4 class="active">Lg gram</h4>
+                            <h4>lg 울트라북</h4>
+                            <h4>lg 노트북</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="brand_series_info">
+                <div class="brand_series_info apple">
                     <h2>APPLE</h2>
-                </div>
-                <div class="brand_series_info">
-                    <h2>GAMING</h2>
+                    <div class="brand_products_img">
+                        <div>
+                            <h4 class="active">Macbook Air</h4>
+                            <h4>Macbook pro</h4>
+                            <h4>Macbook m1</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <footer>
-                
+                <div class="container">
+                    <span>이용약관</span>
+                    <span>개인정보처리방침</span>
+                    <div>
+                        <span>상호명 | SMARTSHOP</span><span>상호명 | SMARTSHOP</span><span>주소 | 서울시 용산구</span>
+                    </div>
+                    <div>
+                        <span>TEL | 02 - 9876 - 5432 </span><span>FAX | 02 - 1234 - 1234 </span>
+                    </div>
+                    <div>
+                        <span>사업자등록번호 | 123 - 45 - 6789 </span><span>통신판매업 신고번호 | 서울용산구 - 1234호</span>
+                    </div>
+                    <div>
+                        <span>고객센터 | 02 - 1234 - 5678 (평일 09:00 - 17:30 / 주말,공휴일 09:00 - 13:00)</span><span>판매자 등록문의 | SMART@daelim.com</span>
+                    </div>
+                </div>
             </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
