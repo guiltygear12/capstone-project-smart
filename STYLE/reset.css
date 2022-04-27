@@ -6,3 +6,134 @@ button{cursor: pointer; outline: none;}
 input,textarea,select{outline: none;}
 button,input,textarea,select{font-family: 'Noto Sans KR', sans-serif;}
 li{list-style: none;}
+
+/* 공용 css */
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+    /* border: 1px solid #666; */
+}
+body{
+    background-color: #eee;
+}
+
+/* 헤더영역 */
+nav{
+    height: 60px;
+}
+.gnb_wrap{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.gnb_wrap h1{
+    font-size: 26px;
+    font-weight: 700;
+}
+.gnb_menu{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gnb_menu li{
+    font-size: 16px;
+    position: relative;
+}
+.sub { 
+    display: none;
+    position: absolute; 
+    top: 30px; 
+    left: -10px; 
+    z-index: 1;
+    /* opacity: 0.8;  */
+}
+.sub li{
+    width: inherit;
+    padding: 10px;
+    width: 130PX;
+    background-color: #ccc;
+    /* padding: 20px; */
+    margin-left: -30px;
+    display: block;
+}
+
+.gnb_right{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 아이콘 gnb 우측 영역은 아이콘을 정하고 나서 추가후 제작 예정 */
+.search{
+    border-bottom: 1px solid #555;
+    width: 30px;
+    text-align: right;
+    transition: .5s all;
+}
+.search::after{
+    content: '\f002';
+    font-family: FontAwesome;
+    font-size: 16px;
+}
+.search.active{
+    width: 300px;
+}
+.gnb_right>div:nth-child(1):hover{
+    border-bottom: 1px solid #555;
+    width: 300px;
+}
+.gnb_right i {
+    font-size: 16px;
+    margin-left: 20px;
+}
+.gnb_right .user{
+    position: absolute;
+    z-index: 10;
+    background-color: #555;
+    width: 200px;
+    height: 100px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .2s;
+}
+.gnb_right .user.active{
+    opacity: 1;
+    z-index: 100;
+}
+.gnb_right .user a{
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/* footer */
+footer{
+    width: inherit;
+    height: 150px;
+    margin-top: 150px;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+}
+footer .container{
+    height: 100%;
+}
+footer .container>span{
+    margin-right: 15px;
+}
+footer .container div{
+    display: flex;
+    gap: 20px;
+}
+footer .container div:nth-of-type(1){
+    margin-top: 10px;
+}

@@ -1,0 +1,59 @@
+.product_banner{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    background-image: url("../IMG/wallpaper_5.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.products_division{
+    height: 1000px;
+    width: 1480px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+.products_main{
+    width: 1280px;
+    height: inherit;
+    border: 1px solid black;
+    background-color: #ddd;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 1;
+    transition: .3s;
+}
+.product_item{
+    height: 500px;
+    background-color: #ccc;
+    border-radius: 1rem;
+    flex-grow: 1;
+}
+.products_filter{
+    height: inherit;
+    width: 200px;
+    background-color: #aaa;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    transition: .3s all;
+}
+.products_filter.active{
+    left: -100px;
+}
+.filter_btn{
+    height: 200px;
+    width: 50px;
+    background-color: #ccc;
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    cursor: pointer;
+}

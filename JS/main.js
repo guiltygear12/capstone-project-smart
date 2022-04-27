@@ -150,7 +150,6 @@ $('.recommend_side h4').click(function(){
     $(this).addClass('active')
     if($(".recommend_side h4.reco1.active").length) {
         $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_1.jpg")'})
-        alert('1')
     } else {
         if($(".recommend_side h4.reco2.active").length) {
             $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_2.jpg")'})

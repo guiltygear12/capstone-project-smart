@@ -4,6 +4,9 @@
     margin: 0 auto;
     /* border: 1px solid #666; */
 }
+body{
+    background-color: #eee;
+}
 
 /* 헤더영역 */
 nav{
@@ -40,8 +43,9 @@ nav{
 .sub li{
     width: inherit;
     padding: 10px;
+    width: 130PX;
     background-color: #ccc;
-    padding: 20px;
+    /* padding: 20px; */
     margin-left: -30px;
     display: block;
 }
@@ -154,7 +158,7 @@ nav{
 }
 /* 2번 메인컨텐츠 영역 - 할인,행사중인 컨텐츠 영역 */
 .discount{
-    width: 1280px;
+    width: 1440px;
     height: 800px;
     margin: 0 auto;
     margin-top: 50px;
@@ -170,7 +174,7 @@ nav{
     margin-bottom: 50px;
 }
 .discount div{
-    width: 100%;
+    /* width: inherit; */
     height: 100%;
     padding: 30px;
     box-sizing: border-box;
@@ -180,20 +184,26 @@ nav{
     gap: 30px;
 }
 .discount_main{
-    flex-grow: 7;
+    height: 50%;
+    flex-grow: 3;
     position: relative;
     background-color: #eee;
     border-radius: 2rem;
     box-shadow: #ccc 10px 10px 10px;
+    z-index: -2;
+
 }
 .discount_main img{
     width: 500px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: -50%;
     transform: translate(-50%,-50%);
     opacity: 0;
     transition: .3s;
+    z-index: 100;
+    transform: scale(2);
+    z-index: -1;
 }
 .discount_main .active{
     opacity: 1;
@@ -211,7 +221,27 @@ nav{
     background-color: #eee;
     border-radius: 1rem;
     z-index: 10;
-    box-shadow: #ccc 10px 10px 10px;
+}
+.discount_side div:nth-child(1){
+    background-image: url("../IMG/spring.jpg");
+    background-position: 80%;
+}
+.discount_side div:nth-child(2){
+    background-image: url("../IMG/people.jpg");
+    background-position: 80%;
+}
+.discount_side div:nth-child(2){
+    color: white;
+    text-shadow: #333 1px 1px 1px;
+}
+.discount_side div:nth-child(3){
+    background-image: url("../IMG/lenovo_legion.jpg");
+    background-position: 30%;
+    background-size: 130%;
+}
+.discount_side div:nth-child(3){
+    color: white;
+    text-shadow: #333 1px 1px 1px;
 }
 .discount_side div h3{
     font-size: 30px;
@@ -224,7 +254,7 @@ nav{
 
 /* 추천영역 */
 .recommendation{
-    width: 1280px;
+    width: 1440px;
     height: 700px;
     margin: 0 auto;
     margin-top: 100px;
@@ -313,6 +343,7 @@ nav{
 .brand_series_info h2{
     font-size: 30px;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 .brand_products_img{
     width: 100%;
@@ -322,6 +353,8 @@ nav{
     background-size: 130%;
     position: relative;
     transition: .3s;
+    border-radius: 3rem;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.2);
 }
 .samsung .brand_products_img{
     background-image: url('../IMG/sam1.jpg');
@@ -341,7 +374,8 @@ nav{
     padding: 100px 0;
     justify-content: space-around;
     box-sizing: border-box;
-    background: linear-gradient(to right, rgba(0,0,0,.9), rgba(0,0,0,0));
+    background: linear-gradient(to right, rgba(26, 26, 26, 0.8), rgba(0,0,0,0));
+    border-radius: 3rem;
 }
 .brand_products_img div h4{
     font-size: 18px;
