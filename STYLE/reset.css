@@ -1,6 +1,6 @@
-
-a{text-decoration: none; color: #222;}
-h1,h2,h3,h4,h5,h6{margin: 0;font-weight: normal;}
+html{font-family: 'Noto Sans KR', sans-serif;}
+a{text-decoration: none; color: #222; font-family: 'Noto Sans KR', sans-serif;}
+h1,h2,h3,h4,h5,h6{margin: 0;font-weight: normal; font-family: 'Noto Sans KR', sans-serif;}
 ul{list-style: none;}
 button{cursor: pointer; outline: none;}
 input,textarea,select{outline: none;}
