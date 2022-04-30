@@ -3,6 +3,11 @@ $(".filter_btn").click(function(){
 })
 
 $(".wish_btn").click(function(){
-    $(".fa-heart").toggleClass("active");
-    $(".fa-heart-o").toggleClass("active");
+    $(this).children(".fa-bookmark").toggleClass("active");
+    $(this).children(".fa-bookmark-o").toggleClass("active");
+})
+
+$(".filter_select p").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
 })
