@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTSHOP</title>
+    <link rel="stylesheet" href="./STYLE/reset.css">
+    <link rel="stylesheet" href="./STYLE/font.css">
+    <link rel="stylesheet" href="./STYLE/product_detail.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- gnb 메뉴가 들어갈 영역입니다. -->
+    <nav>
+        <section class="container gnb_wrap">
+            <h1><a href="./main.html">SMARTSHOP</a></h1>
+            <ul class="gnb_menu">
+                <li><a href="#none">제품</a>
+                    <ul class="sub">
+                        <li><a href="#none">비즈니스</a></li>
+                        <li><a href="#none">크리에이터</a></li>
+                        <li><a href="#none">게이머</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">다운로드</a>
+                    <ul class="sub">
+                        <li><a href="#none">필수유틸리티</a></li>
+                        <li><a href="#none">제품제어</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">고객지원</a>
+                    <ul class="sub">
+                        <li><a href="#none">온라인 상담</a></li>
+                        <li><a href="#none">A/S 문의</a></li>
+                        <li><a href="#none">문자 상담</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">오프라인 스토어</a>
+                    <ul class="sub">
+                        <li><a href="#none">매장 위치</a></li>
+                        <li><a href="#none">예약 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="gnb_right">
+                <div class="search"></div>
+                <a href="#none">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+                <div class="user">
+                    <a href="#none">
+                        <p>회원가입</p>
+                    </a>
+                    <a href="#none">
+                        <p>로그인</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <!-- 콘텐츠 영역 -->
+    <main>
+        <!-- 제품 상세페이지 -->
+        <section class="product_detail_wrap">
+            <div class="product_detail_above">
+                <div>
+                    <div class="slide1 wrap slide-wrap" data-slide-duration="600">
+                        <div class="slide-draggable flex">
+                            <div class="item img1"></div>
+                            <div class="item img2"></div>
+                            <div class="item img3"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product_purchase">
+                    <div>
+                        <div class="product_purchase_title">
+                            <div> 새학기 맞이 할인 </div>
+                            <h2>LG 그램 2022</h4>
+                        </div>
+                        <div class="product_purchase_price">
+                            <h3>10%</h3>
+                            <div>
+                                <H5>정가: 1,699,000원</H5>
+                                <H4>할인가: 1,459,000원</H4>
+                            </div>
+                        </div>
+                        <div class="product_purchase_notice">
+                            <details class="notice">
+                                <summary>배송</summary>
+                                <div>무료배송</div>
+                                    <div>도서 산간지역: 5000원</div>
+                                    <div>배송시작 예정날짜: 6/30 순차발송 예정</div>
+                                    <div>예약신청순으로 발송되며 예약순서에 따라 다소 늦어질수있습니다</div>
+                            </details>
+                        </div>
+                        <div class="product_purchase_option">
+                            <h2>옵션설정</h2>
+                            <div>
+                                <label for="cpu"><label style="color: crimson;">*</label>cpu</label>
+                                <input type="text" list="cpu_options" />
+                                <datalist id="cpu_options">
+                                    <option value="인텔 I9 12900HK" />
+                                    <option value="인텔 I7 12800HK" />
+                                    <option value="인텔 I5 12600HK" />
+                                    <option value="라이젠 9 6980HX" />
+                                    <option value="라이젠 7 6800H" />
+                                    <option value="라이젠 5 6600H" />
+                                </datalist>
+                            </div>
+                            <div>
+                                <label for="vga"><label style="color: crimson;">*</label>그래픽카드</label>
+                                <input type="text" list="vga_options" />
+                                <datalist id="vga_options">
+                                    <option value="RTX 3080" />
+                                    <option value="RTX 3070" />
+                                    <option value="RTX 3060" />
+                                    <option value="RTX 3050" />
+                                    <option value="RTX 2060" />
+                                    <option value="RTX 2050" />
+                                </datalist>
+                            </div>
+                            <div>
+                                <label for="storage"><label style="color: crimson;">*</label>저장공간</label>
+                                <input type="text" list="storage_options" />
+                                <datalist id="storage_options">
+                                    <option value="SSD 1TB (+10만)" />
+                                    <option value="SSD 512GB (+5만)" />
+                                    <option value="SSD 256GB" />
+                                </datalist>
+                            </div>
+                            <div>
+                                <label for="ram"><label style="color: crimson;">*</label>램</label>
+                                <input type="text" list="ram_options" />
+                                <datalist id="ram_options">
+                                    <option value="32GB (+12만)" />
+                                    <option value="16GB (+4만)" />
+                                    <option value="8GB" />
+                                </datalist>
+                            </div>
+                            <div>
+                                <label for="accessory">악세서리</label>
+                                <input type="text" list="accessory_options" />
+                                <datalist id="accessory_options">
+                                    <option value="백팩 (+3만)" />
+                                    <option value="100w PD 충전기 (+3만)" />
+                                    <option value="노트북 스탠드 (+1만)" />
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="product_purchase_btn">
+                            <div class="btn1">구매하기</div>
+                            <div class="btn2">장바구니</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product_detail_info">
+                <h1>제품 상세정보</h1>
+            </div>
+            <div class="product_detail_spec">
+                <h1>제품 스펙</h1>
+            </div>
+            <div class="product_detail_review">
+                <h1>사용자 리뷰</h1>
+            </div>
+            <div class="product_detail_notice">
+                <h1>구매시 유의사항</h1>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <span>이용약관</span>
+                <span>개인정보처리방침</span>
+                <div>
+                    <span>상호명 | SMARTSHOP</span><span>상호명 | SMARTSHOP</span><span>주소 | 서울시 용산구</span>
+                </div>
+                <div>
+                    <span>TEL | 02 - 9876 - 5432 </span><span>FAX | 02 - 1234 - 1234 </span>
+                </div>
+                <div>
+                    <span>사업자등록번호 | 123 - 45 - 6789 </span><span>통신판매업 신고번호 | 서울용산구 - 1234호</span>
+                </div>
+                <div>
+                    <span>고객센터 | 02 - 1234 - 5678 (평일 09:00 - 17:30 / 주말,공휴일 09:00 - 13:00)</span><span>판매자 등록문의 |
+                        SMART@daelim.com</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 제이쿼리 ui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <!-- lodash 플러그인 -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+    <!-- 자바스크립트 파일 -->
+    <script src="./JS/public.js"></script>
+    <script src="./JS/product_detail.js"></script>
+
+</body>
+
+</html>
