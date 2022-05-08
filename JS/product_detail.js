@@ -74,3 +74,7 @@ $(function () {
   dragSlide__init();
 });
 
+$("input").click(function(){
+  $(".review:nth-of-type(3)").toggleClass("active")
+})
+

@@ -224,12 +224,96 @@
 }
 .product_detail_info div{
     width: 1000px;
-    /* height: 5000px; */
     background-color: #fff;
     margin: 10px auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 200px;
+}
+.product_detail_info div img{
+    width: 100%;
+}
+/* 제품 리뷰 */
+.product_detail_review {
+
+}
+.review{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    padding: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #ccc;
+    box-shadow: 3px 3px 10px #6667ab5e;
+    display: none;
+}
+.review.active{
+    display: flex;
+}
+.review .review_text{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px #6667ab30;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.review_title{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.review_title div{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+.review_title h4{
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+}
+.review_title p{
+    font-size: 16px;
+    margin: 0;
+}
+.draw_up_review{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ccc;
+    border-radius: 15px;
+}
+.draw_up_review textarea{
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px #6667ab30;
+}
+.draw_up_review input[type=button]{
+    width: 5%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 3px 3px 1px 5px #6667ab30;
+    cursor: pointer;
 }
 /* 스펙 / 유의사항 */
 .entry_box{
