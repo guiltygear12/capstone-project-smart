@@ -16,9 +16,6 @@
     padding: 20px;
     box-sizing: border-box;
 }
-.product_detail_above>div{
-    border: 1px solid beige;
-}
 .product_detail_above>div:nth-child(1){
     flex-grow: 5;
     display: flex;
