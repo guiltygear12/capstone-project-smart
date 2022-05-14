@@ -12,13 +12,11 @@
 .my_page_frame{
     width: 1280px;
     height: 1000px;
-    border: 1px solid black;
     margin: 0 auto;
     display: flex;
     background-color: #fff;
-}
-.my_page_frame>div{
-    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6667ab40;
 }
 .my_page_left{
     flex-grow: 1;

@@ -1,0 +1,78 @@
+.gnb_wrap{
+    justify-content: center;
+    align-items: center;
+}
+.sign_up{
+    width: 1280px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign_up h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.input_form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    display: flex;
+}
+.input h3{
+    width: 150px;
+    text-align: end;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.input input{
+    width: 360px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #6667ab40;
+}
+.input input[type=tel]{
+    width: 110px;
+    margin: 0 4px;
+}
+.input input[type=tel]{
+    width: 110px;
+    margin: 0 4px;
+}
+input.email_id{
+    width: 230px;
+    margin-right: 5px;
+}
+input.email_choice{
+    width: 100px;
+    margin-left: 5px;
+}
+.sign_up_btn_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+.btn{
+    background-color: #6667ab;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6667ab40;
+    cursor: pointer;
+}
+label{
+    font-size: 20px;
+}

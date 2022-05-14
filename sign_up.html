@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTSHOP</title>
+    <link rel="stylesheet" href="./STYLE/reset.css">
+    <link rel="stylesheet" href="./STYLE/font.css">
+    <link rel="stylesheet" href="./STYLE/sign_up.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- gnb 메뉴가 들어갈 영역입니다. -->
+    <nav>
+        <section class="container gnb_wrap">
+            <h1><a href="./main.html">SMARTSHOP</a></h1>
+        </section>
+    </nav>
+    <!-- 콘텐츠 영역 -->
+    <main>
+        <section class="sign_up">
+            <h1>회원가입</h1>
+            <div class="login_form">
+                <div class="input_form">
+                    <div class="input">
+                        <h3>ID</h3>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <h3>PASSWORD</h3>
+                        <input type="password">
+                    </div>
+                    <div class="input">
+                        <h3>PASSWORD CHECK</h3>
+                        <input type="password">
+                    </div>
+                    <div class="input">
+                        <h3>NAME</h3>
+                        <input type="text">
+                    </div>
+                    <div class="input">
+                        <h3>EMAIL</h3>
+                        <input type="text" class="email_id">
+                        <label for="email">@</label>
+                        <input type="text" list="email_options" class="email_choice"/>
+                        <datalist id="email_options">
+                            <option value="gmail.com" />
+                            <option value="naver.com" />
+                            <option value="nate.com" />
+                            <option value="daum.net" />
+                            <option value="hanmail.net" />
+                            <option value="kakao.com" />
+                            <option value="msn.com" />
+                            <option value="yahoo.com" />
+                        </datalist>
+                    </div>
+                    <div class="input">
+                        <h3>PHONE</h3>
+                        <input type="tel">
+                        <input type="tel">
+                        <input type="tel">
+                    </div>
+                </div>
+                <div class="sign_up_btn_wrap">
+                    <div class="sign_up_btn btn">가입하기</div>
+                    <div class="back_btn btn">취소</div>
+                </div>
+            </div>
+        </section>
+            <footer>
+                <div class="container">
+                    <span>이용약관</span>
+                    <span>개인정보처리방침</span>
+                    <div>
+                        <span>상호명 | SMARTSHOP</span><span>상호명 | SMARTSHOP</span><span>주소 | 서울시 용산구</span>
+                    </div>
+                    <div>
+                        <span>TEL | 02 - 9876 - 5432 </span><span>FAX | 02 - 1234 - 1234 </span>
+                    </div>
+                    <div>
+                        <span>사업자등록번호 | 123 - 45 - 6789 </span><span>통신판매업 신고번호 | 서울용산구 - 1234호</span>
+                    </div>
+                    <div>
+                        <span>고객센터 | 02 - 1234 - 5678 (평일 09:00 - 17:30 / 주말,공휴일 09:00 - 13:00)</span><span>판매자 등록문의 | SMART@daelim.com</span>
+                    </div>
+                </div>
+            </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./JS/sign_up.js"></script>
+</body>
+</html>
