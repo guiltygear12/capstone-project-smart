@@ -15,7 +15,7 @@ $(document).ready(function() {
 $('.search').click(function(){
     $(this).toggleClass('active')
 })
-$('.gnb_right a i').click(function(){
+$('.gnb_right a i').mouseenter(function(){
     $('.user').toggleClass('active')
 })
 

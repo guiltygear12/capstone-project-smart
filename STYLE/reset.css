@@ -21,13 +21,16 @@ body{
 /* 헤더영역 */
 nav{
     height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background:linear-gradient(to top,rgba(255, 255, 255, 0.4),rgba(255,255,255,0.8))
 }
 .gnb_wrap{
     height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .gnb_wrap h1{
     font-size: 26px;
