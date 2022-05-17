@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTSHOP</title>
+    <link rel="stylesheet" href="./STYLE/reset.css">
+    <link rel="stylesheet" href="./STYLE/font.css">
+    <link rel="stylesheet" href="./STYLE/online_service.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- gnb 메뉴가 들어갈 영역입니다. -->
+    <nav>
+        <section class="container gnb_wrap">
+            <h1><a href="./main.html">SMARTSHOP</a></h1>
+            <ul class="gnb_menu">
+                <li><a href="#none">제품</a>
+                    <ul class="sub">
+                        <li><a href="#none">비즈니스</a></li>
+                        <li><a href="#none">크리에이터</a></li>
+                        <li><a href="#none">게이머</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">다운로드</a>
+                    <ul class="sub">
+                        <li><a href="#none">필수유틸리티</a></li>
+                        <li><a href="#none">제품제어</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">고객지원</a>
+                    <ul class="sub">
+                        <li><a href="#none">온라인 상담</a></li>
+                        <li><a href="#none">A/S 문의</a></li>
+                        <li><a href="#none">문자 상담</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">오프라인 스토어</a>
+                    <ul class="sub">
+                        <li><a href="#none">매장 위치</a></li>
+                        <li><a href="#none">예약 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="gnb_right">
+                <div class="search"></div>
+                <a href="#none">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+                <div class="user">
+                    <a href="#none">
+                        <p>회원가입</p>
+                    </a>
+                    <a href="#none">
+                        <p>로그인</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <!-- 콘텐츠 영역 -->
+    <main>
+        <section class="product_banner">
+            <h3>온라인 상담</h3>
+        </section>
+        <div class="service">
+            <div class="service_step">
+                <div class="step">상담 문의 작성</div>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <div class="step">상담 진행</div>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <div class="step">AS및 후속 절차 진행</div>
+            </div>
+            <div class="service_inquiry">
+                <div class="service_tap_wrap">
+                    <div class="service_tap active">제품 관련문의</div>
+                    <div class="service_tap">사이트 관련문의</div>
+                    <div class="service_tap">계정 관련문의</div>
+                </div>
+                <div class="title">
+                    <label for="title">문의 제목</label>
+                    <input type="text">
+                </div>
+                <div class="tel"> 
+                    <label for="tel">연락처</label>
+                    <div class="tel_option">
+                        <h1>SMS</h1>
+                    </div>
+                    <div class="tel_option_input">
+                        <div class="sms active">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                        <div class="email">
+                            <input type="text">
+                            <input type="text" list="email_options" />
+                                <datalist id="email_options">
+                                    <option value="@gmail.com" />
+                                    <option value="@naver.com" />
+                                    <option value="@nate.com" />
+                                </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <label for="text">문의 내용</label>
+                    <textarea cols="120" rows="30"></textarea>
+                </div>
+                <div class="">
+                    <label for="file">파일 첨부</label>
+                    <input type="text">
+                    <input type="button" value="파일첨부">
+                </div>
+                <div class="">
+                    <div class="send">
+                        전송
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <span>이용약관</span>
+                <span>개인정보처리방침</span>
+                <div>
+                    <span>상호명 | SMARTSHOP</span><span>상호명 | SMARTSHOP</span><span>주소 | 서울시 용산구</span>
+                </div>
+                <div>
+                    <span>TEL | 02 - 9876 - 5432 </span><span>FAX | 02 - 1234 - 1234 </span>
+                </div>
+                <div>
+                    <span>사업자등록번호 | 123 - 45 - 6789 </span><span>통신판매업 신고번호 | 서울용산구 - 1234호</span>
+                </div>
+                <div>
+                    <span>고객센터 | 02 - 1234 - 5678 (평일 09:00 - 17:30 / 주말,공휴일 09:00 - 13:00)</span><span>판매자 등록문의 |
+                        SMART@daelim.com</span>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./JS/online_service.js"></script>
+</body>
+
+</html>
