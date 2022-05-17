@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTSHOP</title>
+    <link rel="stylesheet" href="./STYLE/reset.css">
+    <link rel="stylesheet" href="./STYLE/font.css">
+    <link rel="stylesheet" href="./STYLE/order.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- gnb 메뉴가 들어갈 영역입니다. -->
+    <nav>
+        <section class="container gnb_wrap">
+            <h1><a href="./main.html">SMARTSHOP</a></h1>
+            <ul class="gnb_menu">
+                <li><a href="#none">제품</a>
+                    <ul class="sub">
+                        <li><a href="./products.html">비즈니스</a></li>
+                        <li><a href="#none">크리에이터</a></li>
+                        <li><a href="#none">게이머</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">다운로드</a>
+                    <ul class="sub">
+                        <li><a href="#none">필수유틸리티</a></li>
+                        <li><a href="#none">제품제어</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">고객지원</a>
+                    <ul class="sub">
+                        <li><a href="#none">온라인 상담</a></li>
+                        <li><a href="#none">A/S 문의</a></li>
+                        <li><a href="#none">문자 상담</a></li>
+                    </ul>
+                </li>
+                <li><a href="#none">오프라인 스토어</a>
+                    <ul class="sub">
+                        <li><a href="#none">매장 위치</a></li>
+                        <li><a href="#none">예약 문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="gnb_right">
+                <div class="search"></div>
+                <a href="#none">
+                    <a href="./mypage.html">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </a>
+                </a>
+                <div class="user">
+                    <a href="./sign_up.html"><p>회원가입</p></a>
+                    <a href="./login.html"><p>로그인</p></a> 
+                </div>
+            </div>
+        </section>
+    </nav>
+    <!-- 콘텐츠 영역 -->
+    <main>
+
+        <section class="order">
+            <h1>주문 확인</h1>
+            <div class="order_list_wrap">
+                <h3>결제 리스트</h3>
+                <div class="order_list">
+                    <div class="order_list_title">
+                        <h4>제품명</h4>
+                        <h4>수량</h4>
+                        <h4>가격</h4>
+                        <h4>포인트 적립</h4>
+                    </div>
+                    <div class="order_list_item">
+                        <div class="product">
+                            <div class="product_img"></div>
+                            <div class="product_name">LG 그램 2022 16인치</div>
+                        </div>
+                        <div class="product_count">1개</div>
+                        <div class="product_price">1,590,000원</div>
+                        <div class="product_point">구매 금액의 5% 적립</div>
+                    </div>
+                    <div class="order_list_item">
+                        <div class="product">
+                            <div class="product_img"></div>
+                            <div class="product_name">LG 그램 2022 16인치</div>
+                        </div>
+                        <div class="product_count">1개</div>
+                        <div class="product_price">1,590,000원</div>
+                        <div class="product_point">구매 금액의 5% 적립</div>
+                    </div>
+                    <div class="order_list_item">
+                        <div class="product">
+                            <div class="product_img"></div>
+                            <div class="product_name">LG 그램 2022 16인치</div>
+                        </div>
+                        <div class="product_count">1개</div>
+                        <div class="product_price">1,590,000원</div>
+                        <div class="product_point">구매 금액의 5% 적립</div>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery_info">
+                <h3>배송 확인</h3>
+                <hr>
+                <div class="delivery">
+                    <div class="">
+                        <label for="payment">결제수단</label>
+                        <input type="text" list="payment" />
+                            <datalist id="payment">
+                            <option value="무통장 입금" />
+                            <option value="신용카드" />
+                            <option value="네이버 페이" />
+                            <option value="카카오 페이" />
+                        </datalist>
+                    </div>
+                    <div class="">
+                        <label for="name">수령인</label>
+                        <input type="text">
+                    </div>
+                    <div class="">
+                        <label for="tel">연락처</label>
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                    <div class="">
+                        <label for="address">주소</label>
+                        <input type="text">
+                        <input type="button" value="우편번호">
+                        <input type="text" placeholder="상세주소">
+                        <input type="text">
+                    </div>
+                    <div class="">
+                        <label for="memo">배송 메시지</label>
+                        <textarea cols="100" rows="10" placeholder="예시)  8시 이후에는 경비실 앞에 두고 가주세요 / 현관문을 세게 두드리지 마세요."></textarea>
+                    </div>
+                </div>
+                <div class="deli_tel"></div>
+                <div class="deli_address"></div>
+                <div class="deli_memo"></div>
+            </div>
+            <div class="total_amount">
+                <h3>최종 결제금액</h3>
+                <div>
+                    <div class="total_amount_title">
+                        <h4>상품 가격 총합</h4>
+                        <h4>할인 금액</h4>
+                        <h4>배송비</h4>
+                        <h4>최종 결제 금액</h4>
+                    </div>
+                    <div class="total_amount_item">
+                        <div class="product">1,761,000 원</div>
+                        <div class="product_count">1개</div>
+                        <div class="product_price">1,590,000원</div>
+                        <div class="product_point">구매 금액의 5% 적립</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order_btn_wrap">
+                <input type="button" value="주문하기">
+                <input type="button" value="취소하기">
+            </div>
+        </section>
+        
+            <footer>
+                <div class="container">
+                    <span>이용약관</span>
+                    <span>개인정보처리방침</span>
+                    <div>
+                        <span>상호명 | SMARTSHOP</span><span>상호명 | SMARTSHOP</span><span>주소 | 서울시 용산구</span>
+                    </div>
+                    <div>
+                        <span>TEL | 02 - 9876 - 5432 </span><span>FAX | 02 - 1234 - 1234 </span>
+                    </div>
+                    <div>
+                        <span>사업자등록번호 | 123 - 45 - 6789 </span><span>통신판매업 신고번호 | 서울용산구 - 1234호</span>
+                    </div>
+                    <div>
+                        <span>고객센터 | 02 - 1234 - 5678 (평일 09:00 - 17:30 / 주말,공휴일 09:00 - 13:00)</span><span>판매자 등록문의 | SMART@daelim.com</span>
+                    </div>
+                </div>
+            </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./JS/order.js"></script>
+</body>
+</html>
