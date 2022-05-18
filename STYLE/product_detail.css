@@ -1,17 +1,20 @@
 .product_detail_wrap {
     margin: 50px auto 0;
-    width: 1280px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 1440px;
     height: fit-content;
+    background-color: #fff
 }
 
 /* 1번 제품 구매 화면 */
 /* 제품 이미지 */
 .product_detail_above {
     height: 80vh;
-    width: inherit;
+    width: 100%;
     display: flex;
     gap: 10px;
-    background-color: #ccc;
+    background-color: #dfdff7;
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
@@ -66,6 +69,7 @@
 /* slide css */
 .slide-wrap {
     overflow: hidden;
+    box-shadow: 5px 5px 10px #6667aba0;
 }
 
 .slide-draggable {

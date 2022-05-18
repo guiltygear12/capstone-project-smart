@@ -254,10 +254,13 @@ nav{
 
 /* 추천영역 */
 .recommendation{
-    width: 1440px;
-    height: 700px;
+    width: 100vw;
+    height: 800px;
     margin: 0 auto;
+    padding: 50px 10vw;
+    box-sizing: border-box;
     margin-top: 100px;
+    background-color: #dfdff7;
 }
 .recommendation h2{
     text-align: center;
@@ -274,7 +277,7 @@ nav{
 }
 /* 추천상품 메인이미지 영역 */
 .recommend_main{
-    flex-grow: 5;
+    flex-grow: 7;
     background-color: #ccc;
     border-radius: 1rem;
     background-image: url('../IMG/wallpaper_1.jpg');
@@ -294,8 +297,13 @@ nav{
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    padding: 100px 0;
+    padding: 100px 30px;
+    box-sizing: border-box;
     max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6667ab;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
 }
 .recommend_side:nth-child(3){
     align-items: flex-end;
@@ -354,7 +362,7 @@ nav{
     position: relative;
     transition: .3s;
     border-radius: 3rem;
-    box-shadow: 10px 10px 20px rgba(0,0,0,.2);
+    box-shadow: 10px 10px 10px #dfdff7;
 }
 .samsung .brand_products_img{
     background-image: url('../IMG/sam1.jpg');
