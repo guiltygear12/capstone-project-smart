@@ -149,22 +149,22 @@ $('.recommend_side h4').click(function(){
     $('.recommend_side h4').removeClass('active')
     $(this).addClass('active')
     if($(".recommend_side h4.reco1.active").length) {
-        $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_1.jpg")'})
+        $('.recommend_main').css({'background-image': 'url("../IMG/MAIN/recomend (1).jpg")'})
     } else {
         if($(".recommend_side h4.reco2.active").length) {
-            $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_2.jpg")'})
+            $('.recommend_main').css({'background-image': 'url("../IMG/MAIN/recomend (2).jpg")'})
         } else {
             if($(".recommend_side h4.reco3.active").length) {
-                $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_3.jpg")'})
+                $('.recommend_main').css({'background-image': 'url("../IMG/MAIN/recomend (3).jpg")'})
             } else {
                 if($(".recommend_side h4.reco4.active").length) {
-                    $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_4.jpg")'})
+                    $('.recommend_main').css({'background-image': 'url("../IMG/MAIN/recomend (4).jpg")'})
                 } else {
                     if($(".recommend_side h4.reco5.active").length) {
-                        $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_5.jpg")'})
+                        $('.recommend_main').css({'background-image': 'url("../IMG/MAIN/recomend (5).jpg")'})
                     } else {
                         if($(".recommend_side h4.reco6.active").length) {
-                            $('.recommend_main').css({'background-image': 'url("../IMG/wallpaper_6.jpg")'})
+                            $('.recommend_main').css({'background-image': 'url("../IMG/MAIN/recomend (6).jpg")'})
                         } else {
                     
                         }

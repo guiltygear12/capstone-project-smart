@@ -1,7 +1,7 @@
 button.search-btn{
     padding: 10px;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     border: none;
     border-radius: 10px;
     background-color: #6667ab;
@@ -34,4 +34,54 @@ button.search-btn{
     height: 50px;
     width: 100px;
     border: none;
+}
+.offline-shop{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #6667ab40;
+    display: flex;
+    flex-direction: column;
+}
+.offline-shop h2{
+    font-size: 28px;
+    font-weight: 700;
+}
+.offline-shop-info{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.offline-shop-info>div{
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+.offline-shop-info h3:nth-of-type(1){
+    width: 80px;
+    position: relative;
+}
+.offline-shop-info h3:nth-of-type(1)::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #ccc;
+    top: 0;
+    right: 0;
+}
+form.as{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form.as input{
+    width: 20%;
+}
+form.as span label{
+   display: inline-block;
 }

@@ -51,6 +51,9 @@ body{
     height: 280px;
     margin: 20px auto;
     background-color: #fff;
+    background-image: url("../IMG/apple1.jpg");
+    background-position: 50% 50%;
+    background-size: 150%;
     border-radius: 1rem;
     display: flex;
     justify-content: center;

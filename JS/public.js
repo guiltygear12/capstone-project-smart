@@ -13,3 +13,4 @@ $('.search').click(function(){
 $('.gnb_right a i').click(function(){
     $('.user').toggleClass('active')
 })
+

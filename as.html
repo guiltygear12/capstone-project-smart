@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./STYLE/reset.css">
     <link rel="stylesheet" href="./STYLE/font.css">
     <link rel="stylesheet" href="./STYLE/online_service.css">
+    <link rel="stylesheet" href="./STYLE/download.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
@@ -60,83 +61,84 @@
     <!-- 콘텐츠 영역 -->
     <main>
         <section class="product_banner">
-            <h3>A/S 신청</h3>
+            <h3>A/S 상담 예약</h3>
         </section>
         <div class="service">
-            <div class="service_step">
-                <div class="step">A/S 예약</div>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                <div class="step">A/S 절차 진행</div>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                <div class="step">A/S 완료</div>
-            </div>
             <div class="service_inquiry">
-                <div class="service_tap_wrap">
-                    <div class="service_tap active">제품 관련문의</div>
-                    <div class="service_tap">사이트 관련문의</div>
-                    <div class="service_tap">계정 관련문의</div>
+                <div class="title">
+                    <label for="title">브랜드</label>
+                    <input type="text" list="brand_name" />
+                        <datalist id="brand_name">
+                            <option value="LG" />
+                            <option value="SAMSUNG" />
+                            <option value="APPLE" />
+                            <option value="ASUS" />
+                            <option value="LENOVO" />
+                            <option value="GYGABYTE" />
+                            <option value="MSI" />
+                            <option value="한성컴퓨터" />
+                        </datalist>
                 </div>
                 <div class="title">
                     <label for="title">제품명</label>
                     <input type="text" list="product_name" />
-                        <datalist id="product_name">
-                            <option value="LG 그램 2022" />
-                            <option value="삼성 갤럭시북" />
-                            <option value="삼성 갤럭시 이온" />
-                            <option value="ASUS 비보북" />
-                            <option value="ASUS TUF GAMING" />
-                            <option value="LENOVO LEGION" />
-                            <option value="LG 그램 2022" />
-                            <option value="삼성 갤럭시북" />
-                            <option value="삼성 갤럭시 이온" />
-                            <option value="ASUS 비보북" />
-                            <option value="ASUS TUF GAMING" />
-                            <option value="LENOVO LEGION" />
+                    <datalist id="product_name">
+                        <option value="LG 그램 2022" />
+                        <option value="삼성 갤럭시북" />
+                        <option value="삼성 갤럭시 이온" />
+                        <option value="ASUS 비보북" />
+                        <option value="ASUS TUF GAMING" />
+                        <option value="LENOVO LEGION" />
+                        <option value="LG 그램 2022" />
+                        <option value="삼성 갤럭시북" />
+                        <option value="삼성 갤럭시 이온" />
+                        <option value="ASUS 비보북" />
+                        <option value="ASUS TUF GAMING" />
+                        <option value="LENOVO LEGION" />
+                    </datalist>
+                </div>
+                <div class="title">
+                    <label for="title">시 / 도</label>
+                    <input type="text" list="brand_name" />
+                        <datalist id="brand_name">
+                            <option value="경기도" />
+                            <option value="강원도" />
+                            <option value="충청북도" />
+                            <option value="충청남도" />
+                            <option value="경상북도" />
+                            <option value="경상남도" />
+                            <option value="전라북도" />
+                            <option value="전라남도" />
                         </datalist>
                 </div>
                 <div class="title">
-                    <label for="title">문의 제목</label>
-                    <input type="text">
+                    <label for="title">시 / 군 / 구</label>
+                    <input type="text" list="product_name" />
+                    <datalist id="product_name">
+                        <option value="안양시" />
+                        <option value="광명시" />
+                        <option value="시흥시" />
+                        <option value="부천시" />
+                    </datalist>
                 </div>
-                <div class="tel"> 
-                    <label for="tel">연락처</label>
-                    <div class="tel_option">
-                        <h1>SMS</h1>
-                    </div>
-                    <div class="tel_option_input">
-                        <div class="sms active">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
-                        </div>
-                        <div class="email">
-                            <input type="text">
-                            <input type="text" list="email_options" />
-                                <datalist id="email_options">
-                                    <option value="@gmail.com" />
-                                    <option value="@naver.com" />
-                                    <option value="@nate.com" />
-                                </datalist>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <label for="text">문의 내용</label>
-                    <textarea cols="120" rows="30"></textarea>
-                </div>
-                <div class="file">
-                    <label for="file">파일 첨부</label>
-                    <input type="text">
-                    <input type="button" value="파일첨부">
-                </div>
-                <div class="">
-                    <div class="send">
-                        전송
-                    </div>
-                </div>
+                <form name="as" action="#none" method="post" class="as">
+                    <span>
+                        <label for="date">예약일</label>
+                        <input type='date' name='as-date'/>
+                    </span>
+                    <span>
+                        <label for="date">이름</label>
+                        <input type='text' name='name'/>
+                    </span>
+                    <span>
+                        <label for="date">연락처</label>
+                        <input type='text' name='phone'/>
+                    </span>
+                    <button class="search-btn">예약하기</button>
+                </form>
             </div>
         </div>
-        
+                                      
         <footer>
             <div class="container">
                 <span>이용약관</span>
